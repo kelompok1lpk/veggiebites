@@ -34,7 +34,7 @@ if 'page' not in st.session_state:
 # ---------- KONTEN SETIAP HALAMAN ----------
 def halaman_1():
     st.title("🥦Hellooww welcome at VeggieBites guys!!")
-    st.markdown("*Cari tahu yukk tipe vegetarian kamu yang mana biar kita bisa bantu kasih menu sehat yang sesuai buat kamuu><.*")
+    st.markdown("*Cari tahu yukk tipe vegetarian kamu yang mana biar kita bisa bantu kasih menu sehat yang sesuai buat kamuu><*")
     pilihan = st.radio("Kamu termasuk tipe vegetarian yang mana nih?", 
         ["Lacto-ovo (telur & susu masih aku makan sieh)",
          "Lacto (only susu, telur big no no no)",
@@ -109,6 +109,7 @@ def halaman_4():
             "mentega": "minyak kelapa, margarin vegan, alpukat",
             "mayones": "mayones vegan (tanpa telur), campuran tofu + mustard + lemonTahu sutra + lemon",     
             }
+        
         hasil = pengganti.get(bahan.lower(), "bahan yang kamu cari ga ada nih, cari yang lain yuk")
         st.success(f"Pengganti untuk *{bahan}*: {hasil}")
 
